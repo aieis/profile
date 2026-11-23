@@ -425,23 +425,6 @@ a:active {
                       SKILLS
 ======================================================*/
 
-#skills {
-    background-image: url("../img/portfolio/origins-1.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.skill-cover {
-    background-color: rgba(31, 31, 31, 0.68); 
-}
-
-.skill-cover h3{
-  font-family: "hind", sans-serif;
-  font-size: 35px;
-  margin-bottom: 40px;
-}
-
 .skill-item {
     padding: 20px 0;
     margin-bottom: 30px;
@@ -918,17 +901,62 @@ a:active {
     }
 }
 
-/* Language expertise tiles */
-.skill-item {
-    padding: 30px 20px;
+/* Education: size to content instead of a full screen */
+section.resume-section#education {
+    min-height: 0;
 }
 
-.skill-item h4 {
-    color: #fff;
+/* Language expertise: same look as the other sections */
+section.resume-section#skills {
+    min-height: 0;
+}
+
+.skills-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-entry {
+    margin: 0;
+    max-width: none;
+    padding: 1.75rem;
+}
+
+.skill-entry .entry-title {
     font-size: 1.75rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
-.skill-item p {
-    font-size: 1.15rem;
+.skill-entry p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 767px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Name in the collapsed top bar */
+.brand-name {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #fff;
+    line-height: 1;
+}
+
+/* Image closing each project entry */
+.entry-img {
+    display: block;
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    margin-top: 1.75rem;
 }
