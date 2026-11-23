@@ -960,3 +960,9 @@ section.resume-section#skills {
     object-fit: cover;
     margin-top: 1.75rem;
 }
+
+/* Subtle border so light-edged photos don't blend into white backgrounds */
+.entry-img,
+#portfolio .portfolio-item .portfolio-link img {
+    border: 3px solid rgba(42, 23, 69, 0.15);
+}
