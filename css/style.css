@@ -426,7 +426,7 @@ a:active {
 ======================================================*/
 
 #skills {
-    background-image: url("../img/bg-stats.jpg");
+    background-image: url("../img/portfolio/origins-1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -819,4 +819,116 @@ a:active {
 
 .portfolio-modal .carousel {
     margin-bottom: 20px;
+}
+
+/*====================================================
+           EXPERIENCE / PROJECTS / EDUCATION ENTRIES
+======================================================*/
+.entry {
+    max-width: 960px;
+    margin: 0 auto 2.5rem auto;
+    padding: 2rem 2.25rem;
+    background: #fff;
+    border-left: 6px solid #6b3fa0;
+    box-shadow: 0 4px 18px rgba(42, 23, 69, 0.12);
+}
+
+.entry-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.entry-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.entry-subtitle {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #6b3fa0;
+    margin-top: 0.35rem;
+}
+
+.entry-meta {
+    text-align: right;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #495057;
+    line-height: 1.4;
+}
+
+.entry-date {
+    color: #6b3fa0;
+    font-weight: 600;
+}
+
+.entry-label {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    margin: 1.25rem 0 0.5rem 0;
+}
+
+.entry-list {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.entry-list > li {
+    margin-bottom: 0.6rem;
+}
+
+.entry-list ul {
+    margin-top: 0.35rem;
+    padding-left: 1.25rem;
+    list-style: circle;
+}
+
+.entry-list ul li {
+    margin-bottom: 0.15rem;
+}
+
+.entry-list p {
+    margin: 0.4rem 0 0 0;
+}
+
+.entry > :last-child,
+.entry-head:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .entry {
+        padding: 1.5rem 1.25rem;
+    }
+    .entry-title {
+        font-size: 1.9rem;
+    }
+    .entry-meta {
+        text-align: left;
+    }
+}
+
+/* Language expertise tiles */
+.skill-item {
+    padding: 30px 20px;
+}
+
+.skill-item h4 {
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1.15rem;
 }
