@@ -800,3 +800,23 @@ a:active {
     width:100%;
     position:absolute;
 }
+
+/*====================================================
+           PORTFOLIO - uniform thumbnails & modal media
+======================================================*/
+#portfolio .portfolio-item .portfolio-link img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.portfolio-modal .carousel-item img,
+.portfolio-modal .modal-single-img {
+    max-height: 75vh;
+    object-fit: contain;
+    background: #000;
+}
+
+.portfolio-modal .carousel {
+    margin-bottom: 20px;
+}
